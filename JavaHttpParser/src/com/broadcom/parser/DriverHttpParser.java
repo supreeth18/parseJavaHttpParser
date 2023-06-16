@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DriverSampleHttpParser {
+public class DriverHttpParser {
 	public static void main(String[] args) throws IOException, Exception {
 		JavaHttpParser obj = new JavaHttpParser();
 		List<String[]> list = new ArrayList<>();

@@ -74,14 +74,14 @@ public class JavaHttpParser implements HttpParser {
 					if (invalidHeaderFlag) {
 
 						result.add("\r\n" + HTTP_VERSION + ":" + httpVersion + "\r\n" + HTTP_STATUS + ":" + status
-								+ "\r\n" + HTTP_VALID_HEADERS + ":" + validHeaders + "\r\n"
-								+ "Number of invalid headers : " + countOfInvalidHeaders + "\r\n");
+								+ "\r\n" + HTTP_VALID_HEADERS + ":" + validHeaders + "\r\n" + HTTP_INVALID_HEADERS + ":"
+								+ countOfInvalidHeaders + "\r\n");
 
 					} else {
 
 						result.add("\r\n" + HTTP_VERSION + ":" + httpVersion + "\r\n" + HTTP_STATUS + ":" + status
-								+ "\r\n" + HTTP_VALID_HEADERS + ":" + validHeaders + "\r\n"
-								+ "Number of invalid headers : " + 0 + "\r\n");
+								+ "\r\n" + HTTP_VALID_HEADERS + ":" + validHeaders + "\r\n" + HTTP_INVALID_HEADERS + ":"
+								+ 0 + "\r\n");
 					}
 				}
 				reader.close();
